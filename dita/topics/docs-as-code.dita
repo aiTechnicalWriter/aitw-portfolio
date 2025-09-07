@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="docs-as-code" audience="internal">
+  <title>Docs-as-Code Deployment Workflow</title>
+  <shortdesc>Overview of Qbank’s docs-as-code publishing workflow using GitHub, Markdown, and CI/CD automation.</shortdesc>
+  <body>
+    <section>
+      <title>Tools & Stack</title>
+      <ul>
+        <li><b>Authoring:</b> Markdown + Mermaid.js</li>
+        <li><b>Version Control:</b> Git + GitHub</li>
+        <li><b>CI/CD:</b> GitHub Actions</li>
+        <li><b>Preview:</b> MkDocs (local and GitHub Pages)</li>
+      </ul>
+    </section>
+    <section>
+      <title>Workflow Steps</title>
+      <ol>
+        <li>Author content in Markdown</li>
+        <li>Save diagrams as <code>.mmd</code> and export to <code>.svg</code></li>
+        <li>Commit changes to GitHub repo</li>
+        <li>Trigger build and deploy via GitHub Actions</li>
+        <li>Publish docs to GitHub Pages</li>
+      </ol>
+    </section>
+    <section>
+      <title>Editorial Practices</title>
+      <ul>
+        <li>Use semantic headings for structure</li>
+        <li>Limit line length for readability</li>
+        <li>Include diagrams and screenshots</li>
+        <li>Write meaningful commit messages</li>
+      </ul>
+    </section>
+    <section>
+      <title>Diagram</title>
+      <p>See <xref href="../diagrams/docs-pipeline.svg" format="svg"/> for a visual of the deployment pipeline.</p>
+    </section>
+    <section>
+      <title>Testing</title>
+      <ul>
+        <li>Preview locally with <code>mkdocs serve</code></li>
+        <li>Validate links and image paths</li>
+        <li>Confirm diagram rendering and layout</li>
+      </ul>
+    </section>
+    <section>
+      <title>Notes</title>
+      <p>All content is versioned, traceable, and human-readable. Diagrams are stored as source and export for transparency.</p>
+    </section>
+  </body>
+</topic>
