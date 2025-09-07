@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ops-architecture" audience="internal">
+  <title>Ops Console Architecture Overview</title>
+  <shortdesc>System architecture of Qbank’s internal Ops Console for platform monitoring and support operations.</shortdesc>
+  <body>
+    <section>
+      <title>Architecture Components</title>
+      <ul>
+        <li><b>Frontend:</b> React</li>
+        <li><b>Backend:</b> Node.js</li>
+        <li><b>Event Streaming:</b> Kafka</li>
+        <li><b>Database:</b> MongoDB</li>
+        <li><b>Authentication:</b> Qbank SSO</li>
+        <li><b>Alerting:</b> Slack + PagerDuty</li>
+      </ul>
+    </section>
+    <section>
+      <title>Design Principles</title>
+      <ul>
+        <li>Modular microservices</li>
+        <li>Real-time event processing</li>
+        <li>Role-based access control</li>
+        <li>Scalable logging and alerting</li>
+      </ul>
+    </section>
+    <section>
+      <title>Diagram</title>
+      <p>Refer to <xref href="../diagrams/system-architecture.svg" format="svg"/> for a visual overview.</p>
+    </section>
+  </body>
+</topic>
