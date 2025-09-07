@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="onboarder-runbook" audience="internal">
+  <title>Onboarder Provisioning Runbook</title>
+  <shortdesc>Step-by-step guide for provisioning new employees using Qbank’s internal Onboarder tool.</shortdesc>
+  <body>
+    <section>
+      <title>Provisioning Workflow</title>
+      <ol>
+        <li>Log into the Qbank Admin Console</li>
+        <li>Navigate to <b>Onboarder &gt; New Hire</b></li>
+        <li>Enter employee details: name, role, department, manager</li>
+        <li>Select provisioning profile (e.g., Developer, Support, Contractor)</li>
+        <li>Review auto-assigned resources:
+          <ul>
+            <li>Email account</li>
+            <li>Slack invite</li>
+            <li>Jira, Confluence, GitHub access</li>
+            <li>VPN credentials</li>
+          </ul>
+        </li>
+        <li>Click <b>Provision Now</b></li>
+      </ol>
+    </section>
+    <section>
+      <title>Manual Overrides</title>
+      <p>Use manual provisioning for contractors, interns, and temporary access requests.</p>
+    </section>
+    <section>
+      <title>Diagram</title>
+      <p>See <xref href="../diagrams/provisioning.svg" format="svg"/> for a visual overview.</p>
+    </section>
+    <section>
+      <title>Notes</title>
+      <ul>
+        <li>Provisioning triggers are logged in the audit trail</li>
+        <li>Failed provisioning attempts generate alerts in Slack</li>
+        <li>Profiles can be customized via the Admin Console</li>
+      </ul>
+    </section>
+  </body>
+</topic>
