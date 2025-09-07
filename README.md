@@ -1,71 +1,67 @@
-portfolio/ ├── README.md ├── .gitignore ├── docs/ │   ├── markdown/           # Human-polished Markdown docs │   ├── diagrams/           # Mermaid source files (.mmd) │   ├── images/             # Branded screenshots and logo ├── dita/ │   ├── topics/             # DITA XML topic files │   ├── maps/               # DITA map for Flare publishing ├── chatbot/ │   ├── internal-snippets.md │   ├── customer-snippets.md │   ├── onboarding-flow.md
+# 🧠 Qbank Documentation Portfolio
+
+This repo showcases a multi-channel documentation suite for Qbank, a fictional fintech platform. It includes Markdown guides, DITA topics, chatbot flows, and Mermaid diagrams—designed to reflect editorial realism, modular architecture, and scalable publishing.
 
 ---
 
-## 📄 Documentation Highlights
+## 📁 Folder Structure
 
-### Markdown Portfolio (`/docs/markdown`)
-- API authentication guide
-- Mobile app transfer walkthrough
-- Ops Console architecture overview
-- Loan Portal release notes
-- Onboarder provisioning runbook
-- Docs-as-code deployment workflow
-- Annotated rewrite sample
+```
+docs/
+├── markdown/       # Human-readable guides
+├── diagrams/       # Mermaid source files
+├── images/         # Screenshots and branding
 
-### DITA XML Portfolio (`/dita/topics`)
-- Modular topic files for MadCap Flare
-- Conditional publishing support (`audience="internal"` / `"customer"`)
-- Branded diagrams embedded as SVGs
+dita/
+├── topics/         # Modular DITA XML topics
+├── maps/           # DITA map for publishing
 
-### Diagrams (`/docs/diagrams`)
-- Mermaid-authored diagrams exported to SVG
-- Includes token flow, user journeys, CI/CD pipelines, and system architecture
-
-### Chatbot Content (`/chatbot`)
-- Internal support bot snippets (Slack/Teams)
-- Customer-facing assistant flows (mobile/web)
-- Full onboarding simulation
+chatbot/
+├── internal-snippets.md
+├── customer-snippets.md
+├── onboarding-flow.md
+```
 
 ---
 
-## 🚀 Deployment Options
+## 🧩 Content Highlights
 
-### GitHub Pages (Markdown)
-To preview the Markdown docs as a live site:
-1. Install [MkDocs](https://www.mkdocs.org/)
-2. Add a `mkdocs.yml` file
-3. Deploy via GitHub Actions or GitHub Pages
+### Markdown
+- `api-authentication.md` – OAuth 2.0 guide with structured examples
+- `transfer-funds.md` – Mobile app walkthrough with error handling
+- `annotated-rewrite.md` – Editorial comparison with annotations
+- `docs-as-code.md` – CI/CD workflow for publishing docs
+- `loan-release-notes.md` – Feature updates and bug fixes
+- `onboarder-runbook.md` – HR provisioning steps
+- `docs-structure.md` – Multi-channel content architecture
+- `ops-architecture.md` – Internal system overview
 
-### MadCap Flare (DITA)
-Import `/dita/` into Flare and configure outputs for:
-- Responsive HTML5
-- Print-ready PDFs
-- Chatbot content filtering via conditional attributes
+### DITA XML
+- Modular topics for customer and internal audiences
+- Conditional publishing via `qbank-docs.ditamap`
 
----
+### Diagrams
+- Mermaid source files for architecture, flows, and pipelines
+- Exportable to SVG for embedding in docs
 
-## 🧰 Tools Used
-
-- Markdown + Mermaid.js  
-- DITA XML + MadCap Flare  
-- GitHub Actions  
-- MkDocs (optional for live preview)  
-- VS Code for editing and previewing
-
----
-
-## 👤 Author
-
-**John Stonecypher**  
-Senior Technical Writer & AI Specialist  
-Northglenn, CO  
-[LinkedIn] | [Portfolio Site] | [Email]
+### Chatbot
+- Snippets for Slack and customer-facing bots
+- Onboarding flow with session memory and fallback triggers
 
 ---
 
-## 📎 License
+## 🧠 Purpose
 
-This portfolio is for demonstration purposes only. All content is fictional and created for illustrative use.
+This portfolio demonstrates:
+- Editorial clarity across formats
+- Scalable content architecture
+- Realistic UX for documentation, automation, and support
 
+Built by [John Stonecypher](https://github.com/aiTechnicalWriter), Senior Technical Writer & AI Specialist.
 
+---
+
+## 🚀 Next Steps
+
+Want to preview this repo as a live site?  
+Enable GitHub Pages and point to the `docs/` folder using MkDocs or similar static site generator.
