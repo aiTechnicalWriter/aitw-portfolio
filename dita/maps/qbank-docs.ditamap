@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+  <title>Qbank Documentation Suite</title>
+
+  <!-- Customer-Facing Topics -->
+  <topicref href="topics/api-authentication.dita" audience="customer" navtitle="API Authentication Guide"/>
+  <topicref href="topics/transfer-funds.dita" audience="customer" navtitle="Transfer Funds Guide"/>
+  <topicref href="topics/loan-release-notes.dita" audience="customer" navtitle="Loan Portal Release Notes"/>
+
+  <!-- Internal-Facing Topics -->
+  <topicref href="topics/ops-architecture.dita" audience="internal" navtitle="Ops Console Architecture"/>
+  <topicref href="topics/onboarder-runbook.dita" audience="internal" navtitle="Onboarder Provisioning Runbook"/>
+  <topicref href="topics/docs-as-code.dita" audience="internal" navtitle="Docs-as-Code Workflow"/>
+</map>
