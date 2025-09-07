@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="loan-release-notes" audience="customer">
+  <title>Loan Portal – Release Notes v2.3</title>
+  <shortdesc>Summary of new features, improvements, and bug fixes in Qbank’s Loan Portal version 2.3.</shortdesc>
+  <body>
+    <section>
+      <title>New Features</title>
+      <ul>
+        <li><b>Document Upload Preview:</b> Users can preview uploaded documents before submission.</li>
+        <li><b>Loan Status Tracker:</b> Visual progress bar shows application stages.</li>
+        <li><b>Push Notifications:</b> Real-time alerts for status changes and missing documents.</li>
+      </ul>
+    </section>
+    <section>
+      <title>Improvements</title>
+      <ul>
+        <li>Faster dashboard load times</li>
+        <li>Improved accessibility for screen readers</li>
+        <li>Enhanced error messaging for failed uploads</li>
+      </ul>
+    </section>
+    <section>
+      <title>Bug Fixes</title>
+      <ul>
+        <li>Resolved silent PDF upload failures</li>
+        <li>Fixed incorrect status display for rejected applications</li>
+        <li>Addressed timeout errors during peak hours</li>
+      </ul>
+    </section>
+    <section>
+      <title>Screenshot</title>
+      <p>See <xref href="../images/loan-status.png" format="png"/> for a visual of the new status tracker.</p>
+    </section>
+  </body>
+</topic>
