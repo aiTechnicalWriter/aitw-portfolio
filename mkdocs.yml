@@ -1,0 +1,70 @@
+site_name: "AI Knowledge Frameworks"
+site_description: "Structured insights for prompt engineering, technical writing, and ministry applications"
+site_author: "John Stonecypher"
+site_url: "https://yourdomain.com"
+
+theme:
+  name: material
+  language: en
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep orange
+    - scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.annotate
+    - content.tabs.link
+    - toc.integrate
+    - header.autohide
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+      
+plugins:
+  - search
+  - minify
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+  - mkdocs-awesome-pages
+  - mkdocs-glightbox
+  - mkdocs-redirects
+
+nav:
+  - Home: index.md
+  - Frameworks:
+      - Prompt Templates: frameworks/prompts.md
+      - Docs-as-Code: frameworks/docs-as-code.md
+      - Ministry Models: frameworks/ministry.md
+  - Portfolio:
+      - Banking App Docs: portfolio/banking.md
+      - Interview Transcripts: portfolio/interviews.md
+      - Sermon Series: portfolio/sermons.md
+  - About: about.md
