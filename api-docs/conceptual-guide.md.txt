@@ -1,0 +1,208 @@
+API Documentation: The Qbank Connect API
+The Qbank Connect API's purpose is to allow new applications to interact with Qbank's core legacy banking systems. The documentation for this API will be a two-part sample, reflecting the best practices of providing both a rich reference section and a contextual conceptual guide.
+
+The API Reference will be an OpenAPI/Swagger YAML specification, coded by hand to show a deep understanding of the spec's objects and properties. It will document key endpoints, such as 
+
+customer/details (GET), transaction/history (GET), and account/transfer (POST). Each endpoint will have clearly defined parameters and, critically, a detailed responses object for both successful (e.g., HTTP 200, 201) and common error responses (e.g., HTTP 401, 403, 404), including a sample JSON response body. This shows a commitment to providing a complete picture of the API's behavior. The spec will also define a simple authentication flow to demonstrate an understanding of security principles.
+
+The Conceptual Content will live in a separate Markdown file. This section will serve as the user manual for the API, providing a broader, more holistic perspective than the API Reference. It will explain the 
+
+Qbank Connect API's purpose and its use of REST principles. A step-by-step, simplified explanation of the authentication flow will guide users, and a glossary of key financial terms will make the documentation accessible to developers who may not be familiar with banking jargon.
+
+<<INSERT DIAGRAM HERE: A simple block diagram showing the OpenAPI file being used to auto-generate the reference documentation, highlighting the "docs as code" principle. The diagram should show the YAML file flowing into a "Swagger UI" or "Redoc" block, which then outputs the HTML-based API reference.>>
+
+The Qbank Connect API Conceptual Guide
+This guide provides an overview of the Qbank Connect API, its architecture, and how it is used to interface with the bank's core legacy systems.
+
+1. About the Qbank Connect API
+
+The Qbank Connect API is a modern, RESTful API that acts as an intermediary layer between new, cloud-native applications and Qbank's decades-old mainframe systems. Its primary purpose is to abstract away the complexity of legacy system protocols, allowing development teams to build new products and services without direct interaction with the legacy technology.
+
+2. REST Principles & Terminology
+
+Qbank Connect is a RESTful API, which means it uses standard HTTP methods to interact with resources. The API's design is guided by these principles to ensure it is predictable and easy for developers to use.
+
+Endpoint: A specific URL where an API call is made. For example, https://api.qbank.com/v1/customers/{cif} is an endpoint.
+
+Resource: Any piece of data that can be identified by a URI. In our case, a "Customer," "Account," or "Transaction" are all resources.
+
+CIF: A unique Customer Information File number used to identify a customer within the Qbank ecosystem. This is a crucial piece of legacy terminology that you will encounter frequently.
+
+3. Authentication
+
+The Qbank Connect API uses a simple, secure API Key authentication method.
+
+Request an API Key: An authorized developer must request an API Key from the Qbank Security team.
+
+Include in Header: Once you have your key, you must include it in the X-API-KEY header of every API request.
+
+Invalid Key: If you provide an invalid or missing key, the API will respond with a 401 Unauthorized error.
+
+Developer Quickstart
+A developer quickstart guide must be a concise, action-oriented document designed to get a new developer from "zero" to their first successful API call in under 5 minutes [user query]. This guide will strictly follow the principles of a how-to guide from the Diátaxis framework, which focuses on providing a problem-solution sequence with no digression or unnecessary explanation.
+
+The guide will begin with a concise list of prerequisites, such as having cURL or a code editor installed. Each subsequent step will be a clear command or instruction, providing immediate, visible results. For example, after an authentication step, the guide will show what a successful response should look like, building user confidence and confirming they are on the right path. Inline, working code blocks for cURL commands will be provided to ensure the examples are both practical and accurate.
+
+Quickstart Guide: Get Your First Transaction History
+This guide gets you from zero to a successful API call in under five minutes.
+
+Prerequisites
+A terminal or command prompt.
+
+cURL installed.
+
+An API Key. If you don't have one, please refer to the  for instructions on how to request one.
+
+Step 1: Get Your API Key
+You must have a valid API Key to make calls to the Qbank Connect API. Once you have received your key, save it to a variable to make subsequent commands easier.
+
+Your API key will be a long string of letters and numbers.
+
+Step 2: Retrieve a Customer's Account ID
+We'll start by looking up a customer to get their account information. We'll use a sample CIF (Customer Information File) number.
+
+The response should look like the following:
+
+<<INSERT SCREENSHOT HERE: A screenshot of a terminal showing the successful cURL command and the JSON response from the previous step. The output should be clean, readable, and clearly show the accountId.>>
+
+Step 3: Retrieve Transaction History
+Now that you have the accountId, let's retrieve the transaction history for that account.
+
+Your terminal should show a list of recent transactions.
+<<INSERT SCREENSHOT HERE: A screenshot of a terminal showing the successful cURL command and the JSON response for the transaction history. The output should be clearly visible and formatted nicely.>>
+
+You Did It!
+You've successfully made your first two calls to the Qbank Connect API.
+
+==
+
+# ALTERNATE TEXT
+
+### API Documentation: The Qbank Connect API
+The Qbank Connect API's purpose is to allow new applications to interact with Qbank's core legacy systems. The documentation for this API will be a two-part sample, reflecting the best practices of providing both a rich reference section and a contextual conceptual guide.
+
+The API Reference will be an OpenAPI/Swagger YAML specification, coded by hand to show a deep understanding of the spec's objects and properties. It will document key endpoints, such as 
+
+customer/details (GET), transaction/history (GET), and account/transfer (POST). Each endpoint will have clearly defined parameters and, critically, a detailed responses object for both successful (e.g., HTTP 200, 201) and common error responses (e.g., HTTP 401, 403, 404), including a sample JSON response body. This shows a commitment to providing a complete picture of the API's behavior. The spec will also define a simple authentication flow to demonstrate an understanding of security principles.
+
+The Conceptual Content will live in a separate Markdown file. This section will serve as the user manual for the API, providing a broader, more holistic perspective than the API Reference. It will explain the 
+
+Qbank Connect API's purpose and its use of REST principles. A step-by-step, simplified explanation of the authentication flow will guide users, and a glossary of key financial terms will make the documentation accessible to developers who may not be familiar with banking jargon.
+
+YAML
+
+openapi: 3.0.3
+info:
+  title: Qbank Connect API
+  version: 1.0.0
+  description: The `Qbank Connect` API allows secure, standardized interaction with Qbank's core legacy banking systems. It enables modern applications to perform critical operations such as retrieving customer data and initiating transactions.
+  contact:
+    name: Qbank Technical Documentation
+    url: https://qbank.com/docs
+  license:
+    name: MIT License
+servers:
+  - url: https://api.qbank.com/v1
+    description: Production environment
+tags:
+  - name: Accounts
+    description: Endpoints for managing and querying customer accounts.
+  - name: Transactions
+    description: Endpoints for retrieving transaction history and initiating transfers.
+  - name: Customers
+    description: Endpoints for accessing customer information.
+paths:
+  /accounts/{accountId}/transactions:
+    get:
+      summary: Retrieve transaction history for a specific account.
+      description: Fetches a list of transactions for a given account ID, with optional filters for date range.
+      parameters:
+        - name: accountId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: The unique identifier for the customer's account.
+        - name: startDate
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date
+          description: The start date for the transaction history search (YYYY-MM-DD).
+        - name: endDate
+          in: query
+          required: false
+          schema:
+            type: string
+            format: date
+          description: The end date for the transaction history search (YYYY-MM-DD).
+      responses:
+        '200':
+          description: A list of transactions was successfully retrieved.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  accountId:
+                    type: string
+                  transactions:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        transactionId:
+                          type: string
+                        date:
+                          type: string
+                          format: date
+                        amount:
+                          type: number
+                          format: float
+                        description:
+                          type: string
+              examples:
+                SuccessResponse:
+                  value:
+                    accountId: "4567-8901-2345-6789"
+                    transactions:
+                      - transactionId: "trans-abc-123"
+                        date: "2024-03-15"
+                        amount: -25.50
+                        description: "Coffee Shop"
+                      - transactionId: "trans-def-456"
+                        date: "2024-03-14"
+                        amount: 50.00
+                        description: "Salary deposit"
+        '401':
+          description: Unauthorized. API key is missing or invalid.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+              example:
+                error: "Authentication failed. Invalid or missing API Key."
+        '404':
+          description: Account not found.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+              example:
+                error: "Account with ID '1234' not found."
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-KEY
+security:
+  - ApiKeyAuth:
+<<INSERT DIAGRAM HERE: A simple block diagram showing the OpenAPI file being used to auto-generate the reference documentation, highlighting the "docs as code" principle. The diagram should show the YAML file flowing into a "Swagger UI" or "Redoc" block, which then outputs the HTML-based API reference.>>

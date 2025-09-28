@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Welcome to My Portfolio","text":"<p>This site showcases my technical writing skills using a modern docs-as-code workflow.</p>"}]}
