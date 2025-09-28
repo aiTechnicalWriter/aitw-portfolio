@@ -1,4 +1,0 @@
-Explanation: The Qbank Transaction Lifecycle
-The Qbank Core application processes transactions through a complex, multi-stage lifecycle. Understanding this process is key to resolving customer issues. This explanation provides a high-level overview of the why behind the process.
-
-<<INSERT DIAGRAM HERE: A flowchart or state diagram showing the transaction lifecycle. It will show states such as Initiated, Pending Validation, Authorized, Posted, and Reversed, with arrows showing the flow between them. A note about the Legacy Mainframe System handling validation will be included.>>
