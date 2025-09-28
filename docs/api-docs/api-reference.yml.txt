@@ -1,0 +1,156 @@
+openapi: 3.0.3
+info:
+  title: Qbank NexusGateway API
+  description: |-
+    The NexusGateway API provides a modern, RESTful interface to access core Qbank services, including legacy systems and modern microservices. It is the primary entry point for all new application development.
+  version: 2.1.0
+servers:
+  - url: https://api.qbank.com/v2
+    description: Production Server
+  - url: https://api.sandbox.qbank.com/v2
+    description: Sandbox Server
+tags:
+  - name: Accounts
+    description: Operations related to customer bank accounts.
+  - name: Transactions
+    description: Operations for retrieving and creating transactions.
+
+paths:
+  /accounts/{accountId}:
+    get:
+      tags:
+        - Accounts
+      summary: Get Account Details
+      description: Retrieves core details for a specific customer account, such as balance, account type, and status.
+      operationId: getAccountById
+      parameters:
+        - name: accountId
+          in: path
+          description: The unique identifier for the account.
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Successful retrieval of account details.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccountDetails'
+        '404':
+          description: Account not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security:
+        - bearerAuth: [read:accounts]
+
+  /accounts/{accountId}/transactions:
+    get:
+      tags:
+        - Transactions
+      summary: List Account Transactions
+      description: Retrieves a list of recent transactions for a specified account. Supports pagination.
+      operationId: getTransactionsByAccountId
+      parameters:
+        - name: accountId
+          in: path
+          description: The unique identifier for the account.
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: limit
+          in: query
+          description: The maximum number of transactions to return.
+          schema:
+            type: integer
+            default: 25
+            maximum: 100
+      responses:
+        '200':
+          description: A paginated list of transactions.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Transaction'
+        '404':
+          description: Account not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security:
+        - bearerAuth: [read:transactions]
+
+components:
+  schemas:
+    AccountDetails:
+      type: object
+      properties:
+        accountId:
+          type: string
+          format: uuid
+          example: "123e4567-e89b-12d3-a456-426614174000"
+        accountType:
+          type: string
+          enum: [CHECKING, SAVINGS, LOAN]
+          example: "CHECKING"
+        balance:
+          type: number
+          format: double
+          example: 1542.75
+        currency:
+          type: string
+          example: "USD"
+        status:
+          type: string
+          enum: [ACTIVE, DORMANT, CLOSED]
+          example: "ACTIVE"
+        openedDate:
+          type: string
+          format: date-time
+          example: "2021-07-21T17:32:28Z"
+
+    Transaction:
+      type: object
+      properties:
+        transactionId:
+          type: string
+          example: "txn_a1b2c3d4e5f6"
+        amount:
+          type: number
+          format: double
+          example: -75.50
+        description:
+          type: string
+          example: "Point of Sale - COFFEE SHOP"
+        timestamp:
+          type: string
+          format: date-time
+          example: "2025-09-10T14:15:22Z"
+        type:
+          type: string
+          enum: [DEBIT, CREDIT, TRANSFER]
+          example: "DEBIT"
+
+    Error:
+      type: object
+      properties:
+        code:
+          type: string
+          example: "NOT_FOUND"
+        message:
+          type: string
+          example: "The requested resource could not be found."
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: "OAuth 2.0 token for API authorization."

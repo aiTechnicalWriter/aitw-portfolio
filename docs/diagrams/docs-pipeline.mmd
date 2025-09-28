@@ -1,8 +1,0 @@
-%% docs-pipeline.mmd
-flowchart TD
-  A[Author content in Markdown] --> B[Save diagrams as .mmd and export to .svg]
-  B --> C[Commit changes to GitHub repo]
-  C --> D[Trigger build and deploy via GitHub Actions]
-  D --> E{Publish?}
-  E -- Yes --> F[Docs deployed to GitHub Pages]
-  E -- No --> D
