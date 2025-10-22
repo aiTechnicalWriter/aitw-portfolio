@@ -8,5 +8,5 @@ curl -X GET "https://api.qbank.com/v2/accounts/{accountId}/transactions?limit=5"
 ```
 
 > Expected response: JSON array of transactions with `amount`, `description`, and `timestamp`.  
-> 📸 *Insert screenshot showing transaction list*
+
 

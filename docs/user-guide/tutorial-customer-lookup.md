@@ -1,4 +1,5 @@
-Qbank Core Internal User Guide
+# Qbank Core Internal User Guide
+
 Tutorial: Getting Started with a Customer Lookup
 Goal: To perform your first successful customer lookup in the Qbank Core application. This tutorial will build muscle memory and introduce the core workflow.
 
@@ -40,40 +41,3 @@ The Qbank Core application processes transactions through a complex, multi-stage
 Reference: Qbank Core Field Definitions
 This section is a factual list of all fields and their definitions within the application's UI, intended for quick look-up.
 
-A video script with annotations will also be included, demonstrating expertise in multi-modal documentation [user query]. The script will explain a complex Qbank Core process (e.g., handling a customer dispute). The annotations will show where visuals (B-roll, screen capture) and graphics will be placed, demonstrating a sophisticated approach to communication beyond text alone.
-
-
-====
-
-This may be the exact same as above, but Gemini is giving it to me again, so I am pasting it here:
-
-AI as a Force Multiplier: A Practical Framework
-In the modern landscape, a senior technical writer must not only be aware of AI but also be an expert in leveraging it effectively. The core principle is that AI is a tool, not a replacement. Its value lies in augmenting human intelligence, not in supplanting it. This is the    
-
-human-in-the-loop model , which is a central philosophy of this portfolio.   
-
-AI's ability to automate content generation, drafting, and summarization frees up the technical writer's time to focus on higher-value tasks, such as information architecture, audience analysis, and strategic content planning. The modern technical writer's job is not just writing, but thinking and curating. For example, a senior writer would not use AI to generate a full set of release notes without supervision. Instead, they would use an AI tool to rapidly generate a first draft based on a pull request's changelog. The human writer would then apply strategic thinking, audience empathy, and detailed editing to transform that draft into a high-quality, impactful document that communicates the value of the new features.
-
-The following table categorizes AI applications by function and explains their specific value to a senior technical writer in a structured, professional format.
-
-Function	Tools	Strategic Use Case	Human-in-the-Loop Role
-Content Generation & Drafting	ChatGPT, Bard, Claude, Hix AI	
-Use to rapidly prototype first drafts of basic documents or to generate multiple outlines for a single topic. Accelerates the initial "blank page" phase.   
-
-Curation, fact-checking, tone adjustment, and ensuring adherence to a pre-defined style guide.
-Summarization & Explanation	QuillBot, Perplexity AI, ChatGPT	
-Use to condense complex research papers or meeting notes into a concise memo. Valuable for creating executive summaries and high-level overviews.   
-
-Validation of key points, identification of any lost nuance, and application of a specific audience-centric narrative.
-Editing & Style Checks	Grammarly, DeepL Write, Reverso	
-Automate grammar, spelling, and basic style consistency checks. Can provide feedback on tone and readability.   
-
-Critical review of suggestions, application of domain-specific jargon where appropriate, and maintaining a human voice.
-Knowledge & Content Gaps	ClickHelp's Answer Genius	
-Analyze user questions and search queries to identify gaps in existing documentation. Suggests content updates or additions.   
-
-Analyze the root cause of user confusion and develop a strategic plan to address knowledge gaps, which may involve new documentation.
-Translation & Localization	DeepL, Reverso	
-Translate technical content into other languages while preserving technical terminology and contextual meaning.   
-
-Review and validate machine translations, especially for industry-specific jargon and legal terms, to ensure accuracy for a global audience.

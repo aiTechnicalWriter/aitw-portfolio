@@ -1,23 +1,3 @@
-## Code & Syntax
-
-This section defines how to present code, commands, file paths, and syntax-related content in QBank documentation. The goal is to ensure clarity, consistency, and developer-friendly formatting across all materials.
-
----
-
-### Code Blocks
-
-Use fenced code blocks with triple backticks (` ``` `) to display multi-line code. Always specify the language for syntax highlighting.
-
-````markdown
-```python
-def calculate_balance(transactions):
-    return sum(transactions)
-```
-
-
-
-
-
 # Qbank Application Documentation Style Guide (Excerpt)
 This document provides standards for creating clear, consistent, and helpful documentation for Qbank products.
 

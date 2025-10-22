@@ -149,3 +149,26 @@ Right-side ToC restored by removing navigation.sections
 **Next Steps:** Polish homepage copy, modularize `reference-fields.md`, and showcase Featured Project block
 
 
+### 🧩 Restore Snippet — Repo Rename & Deployment Path Fix  
+**Timestamp:** Wednesday, 22 October 2025, 15:07 MDT  
+**Milestone:** Renamed GitHub repo and corrected GitHub Pages source to restore MkDocs navigation
+
+**Context:**  
+MkDocs was deploying to `/aitechnicalwriter.github.io/` due to GitHub treating the repo as a user site. Navigation failed to render. Pivoted to project site model by renaming the repo and updating deployment settings.
+
+**Actions Taken:**  
+- Renamed repo from `aitechnicalwriter.github.io` → `aitw-portfolio`  
+- Updated local Git remote:  
+  git remote set-url origin https://github.com/aiTechnicalWriter/aitw-portfolio.git  
+- Updated `site_url` in `mkdocs.yml`:  
+  site_url: https://aitechnicalwriter.github.io/aitw-portfolio/  
+- Deployed with:  
+  mkdocs gh-deploy --force  
+- Switched GitHub Pages source from `main` → `gh-pages` branch  
+- Verified navigation rendering in Incognito mode (browser cache was interfering)
+
+**Outcome:**  
+Site now live and fully functional at:  
+https://aitechnicalwriter.github.io/aitw-portfolio/  
+MkDocs navigation restored. Deployment path aligned with project site model.
+

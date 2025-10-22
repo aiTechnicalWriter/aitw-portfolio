@@ -8,4 +8,4 @@ curl -X GET "https://api.qbank.com/v2/accounts/{accountId}" \
 ```
 
 > Expected response: JSON object with `accountId`, `accountType`, and `balance`.  
-> 📸 *Insert screenshot showing account details*
+
