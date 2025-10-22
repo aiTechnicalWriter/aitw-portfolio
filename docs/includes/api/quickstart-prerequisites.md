@@ -4,4 +4,4 @@ To follow this guide, you’ll need:
 - cURL installed
 - A valid Qbank API Key
 
-If you don’t have an API key, refer to the [API Conceptual Guide](conceptual-guide.md) for instructions.
+If you don’t have an API key, refer to the [API Conceptual Guide](explanation-conceptual-guide.md) for instructions.

@@ -9,7 +9,7 @@ related-topics:
   - style-guide/code-syntax-guide.md
 ---
 
-# QBank API Conceptual Guide
+# QBank Connect API Guide
 
 This guide introduces the core concepts behind the QBank Connect API design, including authentication, data formats, rate limits, and error handling. It’s intended for developers integrating with our platform and technical writers documenting API behavior.
 
@@ -41,8 +41,6 @@ Errors follow a consistent structure:
   }
 }
 ```
-
-Refer to the [Error Messaging Guidelines](../../style-guide/error-messaging.md) for formatting standards.
 
 ## Best Practices
 
