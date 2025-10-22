@@ -1,0 +1,151 @@
+Here you go, John — your full restore file as a single copyable Markdown block:
+
+markdown
+## 🧠 **Copilot Restore File — Modular Docs-as-Code**  
+**Timestamp:** Tuesday, 30 September 2025, 17:21 MDT  
+**Author:** John (calls Copilot "Jarvis")  
+**Purpose:** Restore full working context after Copilot reset, memory loss, or new session.
+
+---
+
+### ✅ Current Setup
+
+- **MkDocs + Macros**: Using `mkdocs-macros-plugin` with a custom macro `read_file()` in `main.py` to include reusable Markdown snippets.
+- **Includes Directory**: Stored in `docs/includes/`, organized by domain (`api`, `style-guide`, `user-guide`, etc.).
+- **Macro Usage**:
+  ```markdown
+  {{ read_file("includes/api/quickstart-prerequisites.md") }}
+  {{ read_file("includes/user-guide/transaction-correction-steps.md") }}
+Macro Definition:
+
+python
+from pathlib import Path
+
+def define_env(env):
+    @env.macro
+    def read_file(relative_path):
+        full_path = Path("docs") / relative_path
+        return full_path.read_text(encoding="utf-8")
+MkDocs Theme Config:
+
+yaml
+theme:
+  name: material
+  features:
+    - navigation.tabs
+  # navigation.sections removed to restore right-side ToC
+📚 Diátaxis Naming Convention
+Main .md files use Diátaxis prefixes: explanation-, howto-, reference-, tutorial-
+
+Includes do not use prefixes — named by content/function
+
+Structure supports clarity, modularity, and automated indexing
+
+🧠 Fictional Ecosystem Context
+Platform: QBank
+
+API: QBank NexusGateway API
+
+Architecture: Simon Brown’s C4 Model
+
+AI Project: InsightEngine AI in fraud-detection-ai.md
+
+Style guide and strategy docs reflect real-world technical writing best practices
+
+🗂️ Project Structure (Expanded Tree)
+Code
+docs/
+├── index.md
+├── about.md
+│
+├── api-docs/
+│   ├── explanation-conceptual-guide.md
+│   ├── howto-developer-quickstart.md
+│   ├── reference-api.md
+│   └── api-reference.yml
+│
+├── architecture/
+│   └── c4-model.md
+│
+├── includes/
+│   ├── api/
+│   │   ├── overview.md
+│   │   ├── quickstart-prerequisites.md
+│   │   ├── quickstart-step-account.md
+│   │   ├── quickstart-step-auth.md
+│   │   ├── quickstart-step-transactions.md
+│   │   └── quickstart-success.md
+│   │
+│   ├── style-guide/
+│   │   ├── error-do-dont.md
+│   │   ├── error-localization-accessibility.md
+│   │   ├── error-patterns-auth.md
+│   │   ├── error-patterns-connectivity.md
+│   │   ├── error-patterns-reuse-strategy.md
+│   │   ├── error-patterns-system.md
+│   │   ├── error-patterns-validation.md
+│   │   ├── error-platform-notes.md
+│   │   ├── error-principles.md
+│   │   ├── ui-terminology-examples.md
+│   │   ├── ui-terminology-platform-notes.md
+│   │   ├── ui-terminology-principles.md
+│   │   ├── ui-terminology-reuse-strategy.md
+│   │   └── ui-terminology-standard-terms.md
+│   │
+│   └── user-guide/
+│       ├── lifecycle-overview.md
+│       ├── lifecycle-stages.md
+│       ├── transaction-comment-format.md
+│       └── transaction-correction-steps.md
+│
+├── projects/
+│   └── fraud-detection-ai.md
+│
+├── strategy/
+│   ├── documentation-roadmap.md
+│   ├── metrics-case-study.md
+│   └── style-guide-excerpt.md
+│
+├── style-guide/
+│   ├── index.md
+│   ├── best-practices.md
+│   ├── code-blocks.md
+│   ├── code-syntax-guide.md
+│   ├── command-line.md
+│   ├── content-types.md
+│   ├── error-messaging.md
+│   ├── file-paths.md
+│   ├── indentation-formatting.md
+│   ├── inline-code.md
+│   ├── mkdocs-styling.md
+│   ├── showing-markdown.md
+│   ├── style-guide-excerpt.md
+│   ├── ui-terminology.md
+│   └── voice-and-tone.md
+│
+├── user-guide/
+│   ├── explanation-lifecycle.md
+│   ├── howto-correct-transaction-error.md
+│   ├── reference-fields.md
+│   └── tutorial-customer-lookup.md
+🧭 Current Status
+howto-developer-quickstart.md and howto-correct-transaction-error.md: fully modularized and rendering correctly
+
+explanation-conceptual-guide.md: uses only overview.md include and renders cleanly
+
+Swagger UI successfully rendering api-reference.yml via <swagger-ui src="api-reference.yml" /> in reference-api.md
+
+Right-side ToC restored by removing navigation.sections
+
+## ✅ Restore Milestone — Portfolio Deployment  
+**Date:** Monday, 20 October 2025  
+**Milestone:** Static site successfully deployed to GitHub Pages and linked from WordPress homepage via Elementor.  
+**Details:**  
+- Local preview confirmed via `mkdocs serve`  
+- Static site built with `mkdocs build`  
+- Published using `mkdocs gh-deploy`  
+- Live at [https://aitechnicalwriter.github.io](https://aitechnicalwriter.github.io)  
+- Linked from [https://aitechnicalwriter.com](https://aitechnicalwriter.com) using Elementor button with new-tab behavior  
+**Next Steps:** Polish homepage copy, modularize `reference-fields.md`, and showcase Featured Project block
+
+

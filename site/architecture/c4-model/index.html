@@ -1,0 +1,1713 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://aitechnicalwriter.github.io/architecture/c4-model/">
+      
+      
+        <link rel="prev" href="../../api-docs/endpoint-overview/">
+      
+      
+        <link rel="next" href="../../workflows/sdlc/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>C4 Model - aiTechnicalWriter Portfolio</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#alt-text" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="aiTechnicalWriter Portfolio" class="md-header__button md-logo" aria-label="aiTechnicalWriter Portfolio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            aiTechnicalWriter Portfolio
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              C4 Model
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../ai-framework/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  AI Framework
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../api-docs/explanation-conceptual-guide/" class="md-tabs__link">
+          
+  
+  
+  API Docs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Architecture
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../workflows/sdlc/" class="md-tabs__link">
+          
+  
+  
+  Worfklows
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../projects/fraud-detection-ai/" class="md-tabs__link">
+          
+  
+  
+  Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../strategy/documentation-roadmap/" class="md-tabs__link">
+          
+  
+  
+  Strategy
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../user-guide/explanation-lifecycle/" class="md-tabs__link">
+          
+  
+  
+  User Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../style-guide/code-syntax-guide/" class="md-tabs__link">
+          
+  
+  
+  Style Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="aiTechnicalWriter Portfolio" class="md-nav__button md-logo" aria-label="aiTechnicalWriter Portfolio" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    aiTechnicalWriter Portfolio
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AI Framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    API Docs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            API Docs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api-docs/explanation-conceptual-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conceptual Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api-docs/howto-developer-quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Developer Quickstart
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api-docs/reference-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    API Reference
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api-docs/endpoint-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Endpoint Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Architecture
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Architecture
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    C4 Model
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Worfklows
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Worfklows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workflows/sdlc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software Development Lifecycle (SDLC)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Projects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../projects/fraud-detection-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fraud Detection AI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Strategy
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Strategy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../strategy/documentation-roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Documentation Roadmap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../strategy/metrics-case-study/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Metrics Case Study
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../style-guide/style-guide-excerpt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Style Guide Excerpt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            User Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/explanation-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Explanation Lifecycle
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/howto-correct-transaction-error/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Correct Transaction Error
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/reference-fields/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Reference Fields
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user-guide/tutorial-customer-lookup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Customer Lookup Tutorial
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Style Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Style Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../style-guide/code-syntax-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code & Syntax Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../style-guide/voice-and-tone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Voice & Tone Guidelines
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../style-guide/error-messaging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error Messaging Guidelines
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../style-guide/ui-terminology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UI Terminology Standards
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../style-guide/content-types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Content Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_6" id="__nav_10_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Includes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_6">
+            <span class="md-nav__icon md-icon"></span>
+            Includes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../style-guide/includes/error-principles.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error Principles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../style-guide/includes/error-patterns-validation.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error Patterns – Validation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../style-guide/includes/error-patterns-auth.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error Patterns – Auth
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../style-guide/includes/error-patterns-connectivity.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error Patterns – Connectivity
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../style-guide/includes/error-patterns-upload.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error Patterns – Upload
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../style-guide/includes/error-patterns-system.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error Patterns – System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../style-guide/includes/error-patterns-reuse-strategy.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error Patterns – Reuse Strategy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../style-guide/includes/error-platform-notes.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error Platform Notes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../style-guide/includes/error-localization-accessibility.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error Localization & Accessibility
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../style-guide/includes/error-do-dont.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Error Do & Don’t Table
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p>Architectural Overview: The Qbank System (C4 Model)
+This document provides a conceptual overview of the Qbank software architecture using the C4 model. The C4 model is a visual and structured approach to documenting software architecture that simplifies complex systems into a clear, hierarchical set of diagrams. This approach makes the architecture accessible to both technical and non-technical stakeholders by allowing them to "zoom in" to different levels of detail as needed.   </p>
+<p>The Four Levels of the C4 Model
+The C4 model is based on four core levels of abstraction: Context, Container, Component, and Code. Each level provides a different view of the system, tailored to a specific audience and purpose.   </p>
+<p>Level 1: System Context Diagram
+A System Context diagram provides a high-level, "bird's eye view" of the system.   </p>
+<p>Purpose: To show how the system fits into its environment and how it interacts with external entities. It helps stakeholders understand the overall scope of the project and the problem it solves.   </p>
+<p>Audience: Intended for anyone who needs a general understanding of the system, including both technical and non-technical audiences like business stakeholders, product managers, and developers.   </p>
+<p>Scope: Focuses on the system as a single entity, its users (Person), and other systems it interacts with (System). The internal details of the system are not shown at this level.   </p>
+<p>&lt;<INSERT MERMAID DIAGRAM HERE: A simple context diagram with boxes for 'Retail Customer', 'Operations Analyst', 'Third-Party Fraud Detection Service', 'Qbank Connect API', and 'Legacy Mainframe System'. Arrows will show the high-level flow of information between them, with a note that the Qbank Connect API is the system under discussion.>&gt;</p>
+<p>Level 2: Container Diagram
+A Container diagram zooms into a single system to reveal its main, independently deployable and runnable parts.   </p>
+<p>Purpose: To show how the system is deployed and how its major parts communicate. It provides a more technical view for architects and developers.   </p>
+<p>Audience: Primarily for technical audiences such as architects and developers, as it includes details on technology choices and communication protocols.</p>
+<p>Scope: The scope includes the users, external systems, and the containers that make up the system being diagrammed. It explicitly notes technologies used (e.g.,    </p>
+<p>Java, Kubernetes, JSON/HTTPS).   </p>
+<p>&lt;<INSERT LUCIDCHART/FIGMA DIAGRAM HERE: A more detailed diagram showing the containers of Qbank Connect and their interactions, with technology notes (e.g., Java, Kubernetes, JSON over HTTPS). This will be a professionally rendered, complex diagram that explicitly shows connections to Legacy Mainframe and Legacy Payment Gateway containers.>&gt;</p>
+<p>Level 3: Component Diagram
+A Component diagram provides a detailed view of a single container, breaking it down into its internal software components.</p>
+<p>Purpose: To illustrate the structural building blocks within a container, their responsibilities, and their interactions. It is especially useful for developers working on specific parts of the system.   </p>
+<p>Audience: Geared toward a low-level technical audience, specifically architects and developers.   </p>
+<p>Scope: The scope includes users, external systems, containers, and the components within the container being detailed. This is where the documentation would show the    </p>
+<p>LegacyAdapter component translating modern API requests into the legacy system's format.</p>
+<p>&lt;<INSERT DIAGRAM HERE: A component diagram for the Customer Profile Microservice container. It should show the internal components like AuthModule, CustomerDataController, and LegacyAdapter, and their relationships. The LegacyAdapter should have a clear connection to the external Legacy Mainframe System box.>&gt;</p>
+<p>Level 4: Code Diagram
+A Code diagram is the lowest level of abstraction in the C4 model, focusing on the implementation details of a single component.   </p>
+<p>Purpose: To detail the internal structure of a component, often using a UML class diagram, and how it is implemented in code. This level is typically auto-generated from the source code.   </p>
+<p>Audience: This is a very technical view, intended for a low-level audience of architects and developers who need to understand the codebase.   </p>
+<p>Scope: The scope includes users, systems, containers, and the specific components and classes being documented. It is the level least frequently used due to its high level of detail.   </p>
+<p>&lt;<INSERT DIAGRAM HERE: A UML class diagram for the LegacyAdapter component. It should show a few key classes and their methods, such as MainframeClient, RequestTranslator, and ResponseParser, illustrating the data structures and methods used to communicate with the Legacy Mainframe System.>&gt;</p>
+<p>I have now provided the full content for the Architectural Overview, organized in a way that is ready for DITA XML authoring. Please let me know when you are ready for the next document.</p>
+<p>===</p>
+<h1 id="alt-text">ALT TEXT</h1>
+<p>Architectural Overview: The Qbank System (C4 Model)
+This document provides a visual overview of the Qbank software ecosystem using the C4 model. This model helps us to describe a complex system at different levels of abstraction, making the architecture accessible to both technical and non-technical audiences.</p>
+<p>Level 1: System Context Diagram
+The System Context diagram is a high-level view that shows the Qbank ecosystem as a single system and how it interacts with its users and external systems. It answers the question, "How does the system fit into its environment?".</p>
+<p>&lt;<INSERT MERMAID DIAGRAM HERE: A simple context diagram with boxes for 'Retail Customer', 'Operations Analyst', 'Third-Party Fraud Detection Service', 'Qbank Connect API', and 'Legacy Mainframe System'. Arrows will show the high-level flow of information between them, with a note that the Qbank Connect API is the system under discussion.>&gt;</p>
+<p>Level 2: Container Diagram
+The Container diagram zooms into the system to show the main, high-level building blocks or containers. This view is intended for a technical audience, as it shows how the system is deployed and the technologies used for communication.</p>
+<p>&lt;<INSERT LUCIDCHART/FIGMA DIAGRAM HERE: A more detailed diagram showing the containers of Qbank Connect and their interactions, with technology notes (e.g., Java, Kubernetes, JSON over HTTPS). This will be a professionally rendered, complex diagram that explicitly shows connections to Legacy Mainframe and Legacy Payment Gateway containers.>&gt;</p>
+<p>Level 3: Component Diagram
+The Component diagram is a more detailed view that zooms into a single container to show the software components within it. This level is for a low-level technical audience, primarily architects and developers. It breaks down the structural building blocks of a container, detailing each component's responsibilities and how it interacts with other components. For our fictional system, we will use the </p>
+<p>Customer Profile Microservice as the container to document.</p>
+<p>This diagram would show the internal components of the microservice, such as:</p>
+<p>AuthModule: A component responsible for validating the incoming API key.</p>
+<p>CustomerDataController: Handles the business logic for retrieving and updating customer data.</p>
+<p>LegacyAdapter: A critical component that translates modern API requests into a format the Legacy Mainframe System can understand, demonstrating the system's need to bridge old and new technologies.</p>
+<p>&lt;<INSERT DIAGRAM HERE: A component diagram for the Customer Profile Microservice container. It should show the internal components like AuthModule, CustomerDataController, and LegacyAdapter, and their relationships. The LegacyAdapter should have a clear connection to the external Legacy Mainframe System box.>&gt;</p>
+<p>Level 4: Code Diagram
+The Code diagram represents the lowest level of abstraction in the C4 model, focusing on the implementation details of a single component. This level is typically represented by UML class diagrams and is often auto-generated directly from the source code. Because of its high level of detail, it is the level that is least frequently used.</p>
+<p>For our portfolio, we would create a Code diagram that zooms into a specific component from Level 3, such as the LegacyAdapter. This diagram would show the major classes, interfaces, and their relationships, providing an in-depth view of how the component is implemented and how it interacts with the legacy system's protocol. This would demonstrate an understanding of code-level documentation and the ability to work closely with engineering teams on implementation details.</p>
+<p>&lt;<INSERT DIAGRAM HERE: A UML class diagram for the LegacyAdapter component. It should show a few key classes and their methods, such as MainframeClient, RequestTranslator, and ResponseParser, illustrating the data structures and methods used to communicate with the Legacy Mainframe System.>&gt;</p>
+<p>===</p>
+<h1 id="alt-text_1">ALT TEXT</h1>
+<p>LoanSphere Platform Architecture
+This document provides a high-level architectural overview of the LoanSphere platform using the C4 model for visualizing software architecture. It is intended for software developers, architects, and technical project managers at Qbank.</p>
+<p>Level 1: System Context
+The System Context diagram shows how the LoanSphere Platform fits into the broader Qbank IT ecosystem. It shows the key systems it interacts with and the user groups who use it.</p>
+<p>&lt;&lt;INSERT DIAGRAM HERE: A C4 System Context diagram. It should show a central box for the "LoanSphere Platform". Arrows should connect it to the following:</p>
+<p>A "Loan Officer" (Persona) using the system.</p>
+<p>The "Qbank NexusGateway API" (System), which LoanSphere calls to get customer data and push loan decisions.</p>
+<p>The "Qbank CoreConnect Mainframe" (System), showing a dotted-line relationship via the NexusGateway.</p>
+<p>An "Email Service" (System) for sending notifications to customers.</p>
+<p>A "Credit Bureau API" (External System) for pulling credit reports.&gt;&gt;</p>
+<p>Key Interactions:
+Loan Officers use the LoanSphere Platform to manage the entire loan application and approval workflow.</p>
+<p>The platform fetches customer account and history data from the NexusGateway API, which acts as a facade for both modern services and the legacy CoreConnect Mainframe.</p>
+<p>It calls external Credit Bureau APIs to pull applicant credit scores and history.</p>
+<p>It uses an internal Email Service to send status updates to customers.</p>
+<p>Approved loan data is pushed back through the NexusGateway API to update the customer's profile in the core banking systems.</p>
+<p>Level 2: Containers
+The Container diagram zooms into the LoanSphere Platform itself, showing the high-level technical building blocks (the "containers" in C4 terminology).</p>
+<p>&lt;&lt;INSERT DIAGRAM HERE: A C4 Container diagram. It should have a boundary labeled "LoanSphere Platform". Inside the boundary, show the following containers (boxes):</p>
+<p>Single-Page Application (SPA): (Technology: React) The user interface running in the Loan Officer's browser.</p>
+<p>Loan Workflow Service: (Technology: Java/Spring Boot) A REST API that manages the business logic of the loan application lifecycle.</p>
+<p>Document Management Service: (Technology: Python/Django) A REST API responsible for uploading and storing applicant documents (e.g., pay stubs).</p>
+<p>Database: (Technology: PostgreSQL) Stores all data related to loan applications, statuses, and user actions.</p>
+<p>File Storage: (Technology: AWS S3) Blob storage for the actual document files.</p>
+<p>Show arrows indicating the primary interactions:</p>
+<p>The SPA communicates with the Loan Workflow Service and the Document Management Service.</p>
+<p>The Loan Workflow Service reads/writes to the Database and calls the Document Management Service.</p>
+<p>The Document Management Service reads/writes to the Database and stores files in the File Storage.</p>
+<p>Both services make outbound calls to the external systems defined in the Level 1 diagram (NexusGateway, Credit Bureau, etc.).&gt;&gt;</p>
+<p>Container Descriptions:
+Single-Page Application (SPA): A React-based frontend that provides the user interface for Loan Officers. It is a pure client-side application that communicates with the backend services via REST APIs.</p>
+<p>Loan Workflow Service: The core of the platform. This Java-based microservice contains the business logic for processing loan applications, managing state transitions (e.g., 'submitted' -&gt; 'under review' -&gt; 'approved'), and orchestrating calls to other services.</p>
+<p>Document Management Service: A dedicated Python microservice for handling file uploads. This isolates the concerns of file processing and storage, allowing it to be scaled independently.</p>
+<p>Database: A relational PostgreSQL database that serves as the single source of truth for all loan application data.</p>
+<p>File Storage: Uses AWS S3 for durable, secure storage of sensitive customer documents, separating large binary files from the primary database.</p>
+<p>This container-based architecture allows for independent development, deployment, and scaling of the different components of the LoanSphere platform.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

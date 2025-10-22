@@ -1,0 +1,62 @@
+site_name: aiTechnicalWriter Portfolio
+
+site_url: https://aitechnicalwriter.github.io/
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+
+
+markdown_extensions:
+  - toc
+  - tables
+  - fenced_code
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - AI Framework: ai-framework.md
+  - API Docs:
+      - Conceptual Guide: api-docs/explanation-conceptual-guide.md
+      - Developer Quickstart: api-docs/howto-developer-quickstart.md
+      - API Reference: api-docs/reference-api.md
+      - Endpoint Overview: api-docs/endpoint-overview.md
+  - Architecture:
+      - C4 Model: architecture/c4-model.md
+  - Worfklows:
+      - Software Development Lifecycle (SDLC): workflows/sdlc.md
+  - Projects:
+      - Fraud Detection AI: projects/fraud-detection-ai.md
+  - Strategy:
+      - Documentation Roadmap: strategy/documentation-roadmap.md
+      - Metrics Case Study: strategy/metrics-case-study.md
+      - Style Guide Excerpt: style-guide/style-guide-excerpt.md
+  - User Guide:
+      - Explanation Lifecycle: user-guide/explanation-lifecycle.md
+      - Correct Transaction Error: user-guide/howto-correct-transaction-error.md
+      - Reference Fields: user-guide/reference-fields.md
+      - Customer Lookup Tutorial: user-guide/tutorial-customer-lookup.md
+  - Style Guide:
+      - Code & Syntax Guide: style-guide/code-syntax-guide.md
+      - Voice & Tone Guidelines: style-guide/voice-and-tone.md
+      - Error Messaging Guidelines: style-guide/error-messaging.md
+      - UI Terminology Standards: style-guide/ui-terminology.md
+      - Content Types: style-guide/content-types.md
+      - Includes:
+          - Error Principles: style-guide/includes/error-principles.md
+          - Error Patterns – Validation: style-guide/includes/error-patterns-validation.md
+          - Error Patterns – Auth: style-guide/includes/error-patterns-auth.md
+          - Error Patterns – Connectivity: style-guide/includes/error-patterns-connectivity.md
+          - Error Patterns – Upload: style-guide/includes/error-patterns-upload.md
+          - Error Patterns – System: style-guide/includes/error-patterns-system.md
+          - Error Patterns – Reuse Strategy: style-guide/includes/error-patterns-reuse-strategy.md
+          - Error Platform Notes: style-guide/includes/error-platform-notes.md
+          - Error Localization & Accessibility: style-guide/includes/error-localization-accessibility.md
+          - Error Do & Don’t Table: style-guide/includes/error-do-dont.md
+plugins:
+  - search
+  - swagger-ui-tag
+  - macros:
+      include_dir: docs
+
