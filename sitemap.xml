@@ -2,218 +2,226 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://aitechnicalwriter.github.io/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/about/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/ai-framework/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://aitechnicalwriter.github.io/api-docs/endpoint-overview/</loc>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/api-docs/explanation-conceptual-guide/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/api-docs/howto-developer-quickstart/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/api-docs/reference-api/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/architecture/c4-model/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/api/overview/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/api/quickstart-prerequisites/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/api/quickstart-step-account/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/api/quickstart-step-auth/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/api/quickstart-step-transactions/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/api/quickstart-success/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/style-guide/error-do-dont/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/style-guide/error-localization-accessibility/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/style-guide/error-patterns-auth/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/style-guide/error-patterns-connectivity/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/style-guide/error-patterns-reuse-strategy/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/style-guide/error-patterns-system/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/style-guide/error-patterns-validation/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/style-guide/error-platform-notes/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/style-guide/error-principles/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/style-guide/ui-terminology-examples/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/style-guide/ui-terminology-platform-notes/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/style-guide/ui-terminology-principles/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/style-guide/ui-terminology-reuse-strategy/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/style-guide/ui-terminology-standard-terms/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/user-guide/lifecycle-overview/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/user-guide/lifecycle-stages/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/user-guide/transaction-comment-format/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/includes/user-guide/transaction-correction-steps/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/projects/fraud-detection-ai/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/strategy/documentation-roadmap/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/strategy/metrics-case-study/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/strategy/style-guide-excerpt/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/style-guide/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/style-guide/best-practices/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/style-guide/code-blocks/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/style-guide/code-syntax-guide/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/style-guide/command-line/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/style-guide/content-types/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/style-guide/error-messaging/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/style-guide/file-paths/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/style-guide/indentation-formatting/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/style-guide/inline-code/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/style-guide/mkdocs-styling/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/style-guide/showing-markdown/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/style-guide/style-guide-excerpt/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/style-guide/ui-terminology/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/style-guide/voice-and-tone/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/user-guide/explanation-lifecycle/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/user-guide/howto-correct-transaction-error/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/user-guide/reference-fields/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
     </url>
     <url>
          <loc>https://aitechnicalwriter.github.io/user-guide/tutorial-customer-lookup/</loc>
-         <lastmod>2025-10-20</lastmod>
+         <lastmod>2025-10-22</lastmod>
+    </url>
+    <url>
+         <loc>https://aitechnicalwriter.github.io/workflows/sdlc/</loc>
+         <lastmod>2025-10-22</lastmod>
     </url>
 </urlset>

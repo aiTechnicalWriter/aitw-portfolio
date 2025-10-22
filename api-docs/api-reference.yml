@@ -1,8 +1,8 @@
 openapi: 3.0.3
 info:
-  title: Qbank NexusGateway API
+  title: Qbank Connect API
   description: |-
-    The NexusGateway API provides a modern, RESTful interface to access core Qbank services, including legacy systems and modern microservices. It is the primary entry point for all new application development.
+    The Qbank Connect API (QAPI) provides a modern, RESTful interface to access core Qbank services, including legacy systems and modern microservices. It is the primary entry point for all new application development.
   version: 2.1.0
 servers:
   - url: https://api.qbank.com/v2
