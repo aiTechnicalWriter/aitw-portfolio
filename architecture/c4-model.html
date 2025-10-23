@@ -1,7 +1,4 @@
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
+<!DOCTYPE html><html lang="en" class="no-js"><head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -43,10 +40,12 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../assets/css/custom.css">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -55,7 +54,17 @@
     
     
     
-  </head>
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
   
   
     
@@ -91,12 +100,12 @@
     <a href="../index.html" title="aiTechnicalWriter Portfolio" class="md-header__button md-logo" aria-label="aiTechnicalWriter Portfolio" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -124,7 +133,7 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         </label>
         <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -133,15 +142,15 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
         </button>
       </nav>
       
@@ -165,7 +174,7 @@
         <a href="https://github.com/aiTechnicalWriter/aitechnicalwriter.github.io" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -189,7 +198,7 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -201,7 +210,7 @@
     <a href="../index.html" title="aiTechnicalWriter Portfolio" class="md-nav__button md-logo" aria-label="aiTechnicalWriter Portfolio" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
 
     </a>
     aiTechnicalWriter Portfolio
@@ -211,7 +220,7 @@
       <a href="https://github.com/aiTechnicalWriter/aitechnicalwriter.github.io" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -263,7 +272,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2">
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -490,7 +499,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4">
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
@@ -563,7 +572,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5">
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -682,7 +691,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6">
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
@@ -789,7 +798,7 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -819,35 +828,35 @@
 
 
 <p>Architectural Overview: The Qbank System (C4 Model)
-This document provides a conceptual overview of the Qbank software architecture using the C4 model. The C4 model is a visual and structured approach to documenting software architecture that simplifies complex systems into a clear, hierarchical set of diagrams. This approach makes the architecture accessible to both technical and non-technical stakeholders by allowing them to "zoom in" to different levels of detail as needed.   </p>
+This document provides a conceptual overview of the Qbank software architecture using the C4 model. The C4 model is a visual and structured approach to documenting software architecture that simplifies complex systems into a clear, hierarchical set of diagrams. This approach makes the architecture accessible to both technical and non-technical stakeholders by allowing them to "zoom in" to different levels of detail as needed. &nbsp; </p>
 <p>The Four Levels of the C4 Model
-The C4 model is based on four core levels of abstraction: Context, Container, Component, and Code. Each level provides a different view of the system, tailored to a specific audience and purpose.   </p>
+The C4 model is based on four core levels of abstraction: Context, Container, Component, and Code. Each level provides a different view of the system, tailored to a specific audience and purpose. &nbsp; </p>
 <p>Level 1: System Context Diagram
-A System Context diagram provides a high-level, "bird's eye view" of the system.   </p>
-<p>Purpose: To show how the system fits into its environment and how it interacts with external entities. It helps stakeholders understand the overall scope of the project and the problem it solves.   </p>
-<p>Audience: Intended for anyone who needs a general understanding of the system, including both technical and non-technical audiences like business stakeholders, product managers, and developers.   </p>
-<p>Scope: Focuses on the system as a single entity, its users (Person), and other systems it interacts with (System). The internal details of the system are not shown at this level.   </p>
-<p>&lt;<INSERT MERMAID DIAGRAM HERE: A simple context diagram with boxes for 'Retail Customer', 'Operations Analyst', 'Third-Party Fraud Detection Service', 'Qbank Connect API', and 'Legacy Mainframe System'. Arrows will show the high-level flow of information between them, with a note that the Qbank Connect API is the system under discussion.>&gt;</p>
+A System Context diagram provides a high-level, "bird's eye view" of the system. &nbsp; </p>
+<p>Purpose: To show how the system fits into its environment and how it interacts with external entities. It helps stakeholders understand the overall scope of the project and the problem it solves. &nbsp; </p>
+<p>Audience: Intended for anyone who needs a general understanding of the system, including both technical and non-technical audiences like business stakeholders, product managers, and developers. &nbsp; </p>
+<p>Scope: Focuses on the system as a single entity, its users (Person), and other systems it interacts with (System). The internal details of the system are not shown at this level. &nbsp; </p>
+<p>&lt;<insert mermaid diagram here: a simple context with boxes for 'retail customer', 'operations analyst', 'third-party fraud detection service', 'qbank connect api', and 'legacy mainframe system'. arrows will show the high-level flow of information between them, note that qbank api is system under discussion.>&gt;</insert></p>
 <p>Level 2: Container Diagram
-A Container diagram zooms into a single system to reveal its main, independently deployable and runnable parts.   </p>
-<p>Purpose: To show how the system is deployed and how its major parts communicate. It provides a more technical view for architects and developers.   </p>
+A Container diagram zooms into a single system to reveal its main, independently deployable and runnable parts. &nbsp; </p>
+<p>Purpose: To show how the system is deployed and how its major parts communicate. It provides a more technical view for architects and developers. &nbsp; </p>
 <p>Audience: Primarily for technical audiences such as architects and developers, as it includes details on technology choices and communication protocols.</p>
-<p>Scope: The scope includes the users, external systems, and the containers that make up the system being diagrammed. It explicitly notes technologies used (e.g.,    </p>
-<p>Java, Kubernetes, JSON/HTTPS).   </p>
-<p>&lt;<INSERT LUCIDCHART/FIGMA DIAGRAM HERE: A more detailed diagram showing the containers of Qbank Connect and their interactions, with technology notes (e.g., Java, Kubernetes, JSON over HTTPS). This will be a professionally rendered, complex diagram that explicitly shows connections to Legacy Mainframe and Legacy Payment Gateway containers.>&gt;</p>
+<p>Scope: The scope includes the users, external systems, and the containers that make up the system being diagrammed. It explicitly notes technologies used (e.g.,  &nbsp; </p>
+<p>Java, Kubernetes, JSON/HTTPS). &nbsp; </p>
+<p>&lt;<insert lucidchart figma diagram here: a more detailed showing the containers of qbank connect and their interactions, with technology notes (e.g., java, kubernetes, json over https). this will be professionally rendered, complex that explicitly shows connections to legacy mainframe payment gateway containers.>&gt;</insert></p>
 <p>Level 3: Component Diagram
 A Component diagram provides a detailed view of a single container, breaking it down into its internal software components.</p>
-<p>Purpose: To illustrate the structural building blocks within a container, their responsibilities, and their interactions. It is especially useful for developers working on specific parts of the system.   </p>
-<p>Audience: Geared toward a low-level technical audience, specifically architects and developers.   </p>
-<p>Scope: The scope includes users, external systems, containers, and the components within the container being detailed. This is where the documentation would show the    </p>
+<p>Purpose: To illustrate the structural building blocks within a container, their responsibilities, and their interactions. It is especially useful for developers working on specific parts of the system. &nbsp; </p>
+<p>Audience: Geared toward a low-level technical audience, specifically architects and developers. &nbsp; </p>
+<p>Scope: The scope includes users, external systems, containers, and the components within the container being detailed. This is where the documentation would show the  &nbsp; </p>
 <p>LegacyAdapter component translating modern API requests into the legacy system's format.</p>
-<p>&lt;<INSERT DIAGRAM HERE: A component diagram for the Customer Profile Microservice container. It should show the internal components like AuthModule, CustomerDataController, and LegacyAdapter, and their relationships. The LegacyAdapter should have a clear connection to the external Legacy Mainframe System box.>&gt;</p>
+<p>&lt;<insert diagram here: a component for the customer profile microservice container. it should show internal components like authmodule, customerdatacontroller, and legacyadapter, their relationships. legacyadapter have clear connection to external legacy mainframe system box.>&gt;</insert></p>
 <p>Level 4: Code Diagram
-A Code diagram is the lowest level of abstraction in the C4 model, focusing on the implementation details of a single component.   </p>
-<p>Purpose: To detail the internal structure of a component, often using a UML class diagram, and how it is implemented in code. This level is typically auto-generated from the source code.   </p>
-<p>Audience: This is a very technical view, intended for a low-level audience of architects and developers who need to understand the codebase.   </p>
-<p>Scope: The scope includes users, systems, containers, and the specific components and classes being documented. It is the level least frequently used due to its high level of detail.   </p>
-<p>&lt;<INSERT DIAGRAM HERE: A UML class diagram for the LegacyAdapter component. It should show a few key classes and their methods, such as MainframeClient, RequestTranslator, and ResponseParser, illustrating the data structures and methods used to communicate with the Legacy Mainframe System.>&gt;</p>
+A Code diagram is the lowest level of abstraction in the C4 model, focusing on the implementation details of a single component. &nbsp; </p>
+<p>Purpose: To detail the internal structure of a component, often using a UML class diagram, and how it is implemented in code. This level is typically auto-generated from the source code. &nbsp; </p>
+<p>Audience: This is a very technical view, intended for a low-level audience of architects and developers who need to understand the codebase. &nbsp; </p>
+<p>Scope: The scope includes users, systems, containers, and the specific components and classes being documented. It is the level least frequently used due to its high level of detail. &nbsp; </p>
+<p>&lt;<insert diagram here: a uml class for the legacyadapter component. it should show few key classes and their methods, such as mainframeclient, requesttranslator, responseparser, illustrating data structures methods used to communicate with legacy mainframe system.>&gt;</insert></p>
 <p>I have now provided the full content for the Architectural Overview, organized in a way that is ready for DITA XML authoring. Please let me know when you are ready for the next document.</p>
 <p>===</p>
 <h1 id="alt-text">ALT TEXT</h1>
@@ -855,10 +864,10 @@ A Code diagram is the lowest level of abstraction in the C4 model, focusing on t
 This document provides a visual overview of the Qbank software ecosystem using the C4 model. This model helps us to describe a complex system at different levels of abstraction, making the architecture accessible to both technical and non-technical audiences.</p>
 <p>Level 1: System Context Diagram
 The System Context diagram is a high-level view that shows the Qbank ecosystem as a single system and how it interacts with its users and external systems. It answers the question, "How does the system fit into its environment?".</p>
-<p>&lt;<INSERT MERMAID DIAGRAM HERE: A simple context diagram with boxes for 'Retail Customer', 'Operations Analyst', 'Third-Party Fraud Detection Service', 'Qbank Connect API', and 'Legacy Mainframe System'. Arrows will show the high-level flow of information between them, with a note that the Qbank Connect API is the system under discussion.>&gt;</p>
+<p>&lt;<insert mermaid diagram here: a simple context with boxes for 'retail customer', 'operations analyst', 'third-party fraud detection service', 'qbank connect api', and 'legacy mainframe system'. arrows will show the high-level flow of information between them, note that qbank api is system under discussion.>&gt;</insert></p>
 <p>Level 2: Container Diagram
 The Container diagram zooms into the system to show the main, high-level building blocks or containers. This view is intended for a technical audience, as it shows how the system is deployed and the technologies used for communication.</p>
-<p>&lt;<INSERT LUCIDCHART/FIGMA DIAGRAM HERE: A more detailed diagram showing the containers of Qbank Connect and their interactions, with technology notes (e.g., Java, Kubernetes, JSON over HTTPS). This will be a professionally rendered, complex diagram that explicitly shows connections to Legacy Mainframe and Legacy Payment Gateway containers.>&gt;</p>
+<p>&lt;<insert lucidchart figma diagram here: a more detailed showing the containers of qbank connect and their interactions, with technology notes (e.g., java, kubernetes, json over https). this will be professionally rendered, complex that explicitly shows connections to legacy mainframe payment gateway containers.>&gt;</insert></p>
 <p>Level 3: Component Diagram
 The Component diagram is a more detailed view that zooms into a single container to show the software components within it. This level is for a low-level technical audience, primarily architects and developers. It breaks down the structural building blocks of a container, detailing each component's responsibilities and how it interacts with other components. For our fictional system, we will use the </p>
 <p>Customer Profile Microservice as the container to document.</p>
@@ -866,11 +875,11 @@ The Component diagram is a more detailed view that zooms into a single container
 <p>AuthModule: A component responsible for validating the incoming API key.</p>
 <p>CustomerDataController: Handles the business logic for retrieving and updating customer data.</p>
 <p>LegacyAdapter: A critical component that translates modern API requests into a format the Legacy Mainframe System can understand, demonstrating the system's need to bridge old and new technologies.</p>
-<p>&lt;<INSERT DIAGRAM HERE: A component diagram for the Customer Profile Microservice container. It should show the internal components like AuthModule, CustomerDataController, and LegacyAdapter, and their relationships. The LegacyAdapter should have a clear connection to the external Legacy Mainframe System box.>&gt;</p>
+<p>&lt;<insert diagram here: a component for the customer profile microservice container. it should show internal components like authmodule, customerdatacontroller, and legacyadapter, their relationships. legacyadapter have clear connection to external legacy mainframe system box.>&gt;</insert></p>
 <p>Level 4: Code Diagram
 The Code diagram represents the lowest level of abstraction in the C4 model, focusing on the implementation details of a single component. This level is typically represented by UML class diagrams and is often auto-generated directly from the source code. Because of its high level of detail, it is the level that is least frequently used.</p>
 <p>For our portfolio, we would create a Code diagram that zooms into a specific component from Level 3, such as the LegacyAdapter. This diagram would show the major classes, interfaces, and their relationships, providing an in-depth view of how the component is implemented and how it interacts with the legacy system's protocol. This would demonstrate an understanding of code-level documentation and the ability to work closely with engineering teams on implementation details.</p>
-<p>&lt;<INSERT DIAGRAM HERE: A UML class diagram for the LegacyAdapter component. It should show a few key classes and their methods, such as MainframeClient, RequestTranslator, and ResponseParser, illustrating the data structures and methods used to communicate with the Legacy Mainframe System.>&gt;</p>
+<p>&lt;<insert diagram here: a uml class for the legacyadapter component. it should show few key classes and their methods, such as mainframeclient, requesttranslator, responseparser, illustrating data structures methods used to communicate with legacy mainframe system.>&gt;</insert></p>
 <p>===</p>
 <h1 id="alt-text_1">ALT TEXT</h1>
 <p>LoanSphere Platform Architecture
@@ -963,5 +972,7 @@ Single-Page Application (SPA): A React-based frontend that provides the user int
       <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
-  </body>
-</html>
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
